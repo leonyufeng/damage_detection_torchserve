@@ -1,0 +1,8 @@
+torch
+numpy
+opencv-python
+matplotlib
+nvgpu
+torchserve
+torch-model-archiver
+torch-workflow-archiver
