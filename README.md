@@ -27,11 +27,13 @@ For CPU only environment:
 2. Test model serving running
 Under project root, run:  
 `curl localhost:8080/predictions/damage_detection -T data/test_image.jpg`  
+__(Caution: image send must be less than `8MB`, otherwise image may reject the image. Better to resize image within 2k by 2k resolution before sending.)__ 
+
 Then paste the result from the return into `test_serving.py` of `label` variable.
 Like:  
-![Sample detection label](data/snapshot_label.png) 
+![Sample detection label](data/snapshot_label.png)  
 
 Then run `test_serving.py` to verify detection result.
 
 3. Stop serving model 
-Simply run `torchserve --stop` at the 
+Simply run `torchserve --stop` at the same terminal that starts torchserve
