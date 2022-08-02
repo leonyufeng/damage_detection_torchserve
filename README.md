@@ -34,4 +34,4 @@ Like:
 Then run `test_serving.py` to verify detection result.
 
 3. Stop serving model 
-Simply run `torchserve --stop` at the 
+Simply run `torchserve --stop` at the same terminal that starts torchserve
